@@ -16,7 +16,7 @@ const ExpenseForm = ({ onAddExpense }) => {
 
   return (
     <form onSubmit={handleSubmit}>
-      <input type="text" placeholder="Descrição" value={name} onChange={(e) => setName(e.target.value)} />
+      <input type="text" placeholder="Descrição" onChange={(e) => setName(e.target.value)} />
       <input type="number" placeholder="Valor" value={amount} onChange={(e) => setAmount(e.target.value)} />
       <select value={category} onChange={(e) => setCategory(e.target.value)}>
         <option value="Alimentação">Alimentação</option>
