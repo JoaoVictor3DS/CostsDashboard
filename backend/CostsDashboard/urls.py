@@ -7,6 +7,6 @@ router = DefaultRouter()
 router.register(r'expenses', ExpenseViewSet)
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+     path('admin/', admin.site.urls),
     path('api/', include(router.urls)),
 ]
