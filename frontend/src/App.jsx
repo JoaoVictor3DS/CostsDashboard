@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 
+import { AppRoutes } from "./routes";
 
 const API_URL = "http://localhost:8000/api/expenses/";
 
@@ -11,11 +12,11 @@ const App = () => {
 		axios.get(API_URL).then((response) => setExpenses(response.data));
 	}, []);
 
-	console.log(expenses)
+	console.log(expenses);
 
 	return (
-		<div className=" container text-center fs-1">
-			Frontend
+		<div>
+			<AppRoutes />
 		</div>
 	);
 };
